@@ -1,0 +1,140 @@
+@import "main.css";
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.4);
+    z-index: -1;
+}
+
+.hero-bg .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, var(--navy-deep) 0%, transparent 20%, transparent 80%, var(--navy-deep) 100%);
+}
+
+.hero-content {
+    max-width: 800px;
+    margin-top: 60px;
+    z-index: 1;
+}
+
+.badge {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    color: var(--saffron);
+    background-color: rgba(255, 153, 51, 0.15);
+    padding: 6px 12px;
+    border-radius: 100px;
+    border: 1px solid var(--saffron);
+}
+
+.hero-content h1 {
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: -2px;
+    margin-bottom: 25px;
+}
+
+.text-gradient {
+    background: linear-gradient(to right, var(--saffron), white);
+    background-clip: text;
+    color: transparent;
+}
+
+.hero-content p {
+    color: rgb(203, 213, 225);
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 600px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 60px;
+}
+
+.cta-primary {
+    font-size: 14px;
+    color: var(--navy-deep);
+    font-family: var(--font-head);
+    background: var(--saffron);
+    font-weight: 600;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cta-primary:hover {
+    background: var(--saffron-glow);
+    transform: translateY(-5%);
+    box-shadow: 0 0 20px rgba(255, 153, 51, 0.3);
+}
+
+.cta-secondary {
+    font-size: 14px;
+    font-family: var(--font-head);
+    font-weight: 600;
+    padding: 12px 30px;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cta-secondary:hover {
+    border-color: var(--white);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.stats-bar {
+    display: flex;
+    gap: 60px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 30px;
+}
+
+.stats h3 {
+    font-size: 32px;
+    color: var(--white);
+    margin-bottom: 5px;
+}
+
+.stats p {
+    font-size: 14px;
+    color: var(--text-gray);
+    margin: 0;
+}
