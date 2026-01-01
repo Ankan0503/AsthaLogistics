@@ -1,0 +1,43 @@
+@import "main.css";
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.glass-card {
+    padding: 40px;
+    border-radius: 20px;
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    margin: 0px 20px 0 0;
+}
+
+.glass-card:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.glass-icon {
+    background: rgba(255, 153, 51, 0.1);
+    display: inline-flex;
+    padding: 15px;
+    border-radius: 12px;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.glass-icon ion-icon {
+    font-size: 28px;
+    color: var(--saffron);
+}
+
+.glass-card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.glass-card p {
+    font-size: 15px;
+    color: var(--text-gray);
+    line-height: 1.6;
+}

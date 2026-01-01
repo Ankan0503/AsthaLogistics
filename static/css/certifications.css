@@ -1,0 +1,39 @@
+@import "main.css";
+
+.cert-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.cert-card {
+    background: var(--navy-light);
+    border: 1px solid var(--glass-border);
+    padding: 30px;
+    border-radius: 12px;
+    width: 300px;
+    transition: 0.3s;
+}
+
+.cert-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--saffron);
+}
+
+.cert-card ion-icon {
+    font-size: 36px;
+    color: var(--saffron);
+    margin-bottom: 15px;
+}
+
+.cert-card h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.cert-card p {
+    color: var(--text-gray);
+    font-size: 14px;
+}

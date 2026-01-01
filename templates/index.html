@@ -3,10 +3,22 @@
 {%block extra_css%}
 <link rel="stylesheet" href="{% static 'css/hero.css' %}">
 <link rel="stylesheet" href="{% static 'css/services.css' %}">
+<link rel="stylesheet" href="{% static 'css/about.css' %}">
+<link rel="stylesheet" href="{% static 'css/certifications.css' %}">
+<link rel="stylesheet" href="{% static 'css/trust-us.css' %}">
 {%endblock%}
 {%block content%}
-{%include 'partials/home.html'%}
+{%include 'partials/hero.html'%}
+<section id="about" class="section">
+    {%include 'partials/about.html'%}
+</section>
 <section id="services" class="section">
     {%include 'partials/services.html'%}
+</section>
+<section id="trust-us" class="section">
+    {%include 'partials/trust-us.html'%}
+</section>
+<section id="certifications" class="section">
+    {%include 'partials/certifications.html'%}
 </section>
 {%endblock%}
