@@ -1,35 +1,70 @@
 @import "main.css";
 
-.section {
-    /* width: 100%;
-    height: 100vh; */
-    padding: 100px 5%;
-}
-
-.container {
-    max-width: 1200px;
-}
-
-.section-header h2 {
-    font-size: 42px;
-    margin-bottom: 15px;
-}
-
-.section-header p {
-    font-size: 18px;
-    color: var(--text-gray);
-    margin-bottom: 30px;
-}
-
 .bento-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 280px);
     gap: 30px;
 }
 
 .bento-item {
     background-color: var(--navy-light);
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid var(--glass-border);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: all 0.3s ease-in-out;
 }
 
-.truck-card {}
+.bento-item:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+.bento-item ion-icon {
+    font-size: 32px;
+    color: var(--saffron);
+    margin-bottom: 20px;
+}
+
+.bento-content {
+    z-index: 2;
+}
+
+.bento-content h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.bento-content p {
+    font-size: 15px;
+    color: var(--text-gray);
+}
+
+.truck-card {
+    grid-column: span 2;
+    background: linear-gradient(to right, rgba(15, 37, 56, 0.9), rgba(15, 37, 56, 0.4)), url('../images/hero-img.png') !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.port-card {
+    grid-column: span 1;
+    background: linear-gradient(to right, rgba(15, 37, 56, 0.9), rgba(15, 37, 56, 0.4)), url('../images/port.avif') !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.state-card {
+    grid-column: span 1;
+    background: linear-gradient(to right, rgba(15, 37, 56, 0.9), rgba(15, 37, 56, 0.4)), url('../images/highway.png ') !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.security-card {
+    grid-column: span 3;
+}
