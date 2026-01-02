@@ -1,0 +1,5 @@
+.footer {
+    border-top: 1px solid var(--glass-border);
+    background: #02080d;
+    padding-top: 60px;
+}
