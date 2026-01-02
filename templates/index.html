@@ -11,18 +11,19 @@
 {%block content%}
 {%include 'partials/hero.html'%}
 <section id="about" class="section">
-    {%include 'partials/about.html'%}
+    <div class="container">
+        {%include 'partials/about.html'%}
+        {%include 'partials/leadership.html'%}
+    </div>
 </section>
-<section id="services" class="section">
-    {%include 'partials/services.html'%}
 </section>
 <section id="trust-us" class="section">
     {%include 'partials/trust-us.html'%}
 </section>
+<section id="services" class="section">
+    {%include 'partials/services.html'%}
+</section>
 <section id="certifications" class="section">
     {%include 'partials/certifications.html'%}
-</section>
-<section id="leadership" class="section">
-    {%include 'partials/leadership.html'%}
 </section>
 {%endblock%}
