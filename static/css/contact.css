@@ -108,5 +108,5 @@
 
 .map-container iframe {
     display: block;
-    filter: grayscale(0.5) invert(0.9) contrast(0.8);
+    /* filter: grayscale(0.5) invert(0.9) contrast(0.8); */
 }
