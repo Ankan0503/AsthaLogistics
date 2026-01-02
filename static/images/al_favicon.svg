@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#05101a"/>
+  
+  <g transform="translate(-40, 0)">
+      <!-- Base A -->
+      <path d="M100 420 L256 60 L412 420 H320 L256 260 L192 420 H100 Z" fill="#ff9933"/>
+      
+      <!-- Subtle Road Element cutting through -->
+      <path d="M80 440 Q 256 350 430 440" stroke="#05101a" stroke-width="30" fill="none" stroke-linecap="round"/>
+      
+      <!-- Center Arrow Negative Space -->
+      <path d="M256 280 L190 420 H322 L256 280 Z" fill="#05101a"/>
+      
+      <!-- Road Lines inside the negative space to look like a highway -->
+      <path d="M256 310 L256 420" stroke="#ff9933" stroke-width="8" stroke-dasharray="20,10"/>
+  </g>
+
+  <!-- Adding the L -->
+  <!-- Matching the style: thick Saffron block -->
+  <path d="M340 420 V150 H400 V360 H480 V420 H340 Z" fill="#ff9933"/>
+  
+  <!-- Subtle Road Element cutting through the L to match the A theme -->
+  <!-- Re-using the same curve moved slightly or extending the previous one? -->
+  <!-- Let's assume the previous curve cuts through L too if it was part of the scene. -->
+  <!-- The previous curve `M80 440 Q 256 350 430 440` (in the untranslated space 40px right) -->
+  <!-- Let's make a new cut that spans across both -->
+  
+  <!-- Overwriting the cut from the group with a global cut -->
+  <path d="M40 440 Q 256 340 480 440" stroke="#05101a" stroke-width="30" fill="none" stroke-linecap="round"/>
+
+</svg>
